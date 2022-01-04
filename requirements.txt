@@ -1,0 +1,9 @@
+psycopg2
+django
+sqlalchemy
+gino
+asyncpg
+aiogram
+environs
+django-import-export
+django-jazzmin
