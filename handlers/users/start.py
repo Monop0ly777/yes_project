@@ -14,7 +14,7 @@ async def bot_start(msg: types.Message):
     with open("img/1.jpg", "rb") as file:
         data = file.read()
     user = await commands.select_user(user_id=msg.from_user.id)
-    await bot.send_photo(photo=data, caption='Добро пожаловать', reply_markup=start_keyboard, chat_id=msg.from_user.id)
+    await bot.send_photo(photo=data, caption='👋 Ласкаво просимо', reply_markup=start_keyboard, chat_id=msg.from_user.id)
     if not user:
         await commands.add_user(user_id=msg.from_user.id, name=msg.from_user.full_name)
 

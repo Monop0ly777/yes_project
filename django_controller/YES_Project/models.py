@@ -49,8 +49,8 @@ class Items(TimeBaseModel):
 
 class Staff(TimeBaseModel):
     class Meta:
-        verbose_name = 'Сотрудник'
-        verbose_name_plural = 'Сотрудники'
+        verbose_name = 'Персонал'
+        verbose_name_plural = 'Персонал'
         db_table = 'staff'
 
     CHOICES = (
